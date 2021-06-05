@@ -72,7 +72,7 @@ exports.Update = (req, res, next) => {
                 .then(() => {
                     res.status(status.OK).send();
                 })
-                .catch(errir => next (error));
+                .catch(error => next (error));
             } else {
                 res.status(status.NOT_FOUND).send();
             }
