@@ -6,6 +6,7 @@ exports.Insert = (req, res, next) => {
     const descricao = req.body.descricao;
     const preco = req.body.preco;
     const quantemEstoque = req.body.quantemEstoque;
+    const ativo = req.body.ativo;
  
     Produtos.create({
         nome: nome,
