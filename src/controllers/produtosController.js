@@ -13,6 +13,7 @@ exports.Insert = (req, res, next) => {
         descricao: descricao,
         preco: preco,
         quantemEstoque: quantemEstoque,
+        ativo: ativo,
     })
         .then(produtos => {
             if (produtos) {
